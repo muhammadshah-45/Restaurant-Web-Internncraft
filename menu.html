@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Menu</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="menu.css">
+    <script
+      src="https://kit.fontawesome.com/ec23f0b27f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Remixicon cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <h1><i class="fa-solid fa-hotel"></i> &nbsp; Shah's Resto</h1>
+        </div>
+        <ul class="sidebar">
+          <h1><i class="fa-solid fa-hotel" id="hotel"></i> &nbsp; Shah's Resto</h1>
+          <li class="side" onclick=hideSidebar()><a href="#"><svg class="close" xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+          <li class="side"><a href="./index.html">Home</a></li>
+          <li class="side"><a href="./about.html">About</a></li>
+          <li class="side"><a href="./gallery.html">Gallery</a></li>
+          <li class="side"><a href="./contact.html">Contact</a></li>
+          <li class="side"><a href="./menu.html">Food Menu</a></li>
+
+          <i id="bar" class="fa-solid fa-bars"></i>
+        </ul>
+        <ul>
+          <li class="hideOnMobile"><a href="./index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="./about.html">About</a></li>
+          <li class="hideOnMobile"><a href="./gallery.html">Gallery</a></li>
+          <li class="hideOnMobile"><a href="./contact.html">Contact</a></li>
+          <li class="hideOnMobile"><a href="./menu.html">Food Menu</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+          
+          <i id="bar" class="fa-solid fa-bars"></i>
+        </ul>
+      </nav>
+    </div>
+    <!-- Main section -->
+    <div class="about">
+
+      
+    </div>
+      <!-- Footer Section -->
+      <footer>
+
+      
+      <div class="footer">
+        <h1>
+          <i class="bi bi-egg-fried"></i> &nbsp;Shah's Resto
+          <span> <sup> &#8482;</sup></span>
+        </h1>
+        <div class="footer-links">
+          <ul>
+            <a href="./index.html">
+              <li>Home</li>
+            </a>
+            <a href="./about.html">
+              <li>About</li>
+            </a>
+            <a href="">
+              <li>Gallery</li>
+            </a>
+            <a href="./contact.html">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-icons">
+          <i class="bi bi-youtube"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+        </div>
+        <p>Designed & Developed by @mshahdevs</p>
+      </div>
+    </div>
+</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
