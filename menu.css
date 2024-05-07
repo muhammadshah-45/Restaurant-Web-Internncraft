@@ -51,6 +51,49 @@ li a:hover{
 #bar{
     display: none;
 }
+/* Sidebar Section */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 550px;
+    z-index: 999;
+    background:linear-gradient(to top,orange,purple) ;
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.3) ;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar #menus{
+    border-bottom: 3px solid rgba(204,204,204,.4);
+    padding-bottom: 20px;
+    width: 100%;
+}
+.sidebar #hotel{
+    color: orange;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.sidebar h1{
+    margin-top:-8px;
+    font-size: 2rem;
+}
+.close{
+    position: absolute;
+    top: 22px;
+    left: 5px;
+    /* color: red; */
+    background-color: rgb(226, 151, 12);
+    border-radius: 7px;
+    /* float: right; */
+}
+.side{
+    margin-top: 20px;
+}
+
 
 
 /* wrapper style */
@@ -213,5 +256,63 @@ ul{
     font-size: 20px;
 }
 
+@media (max-width:800px){
+    .hideOnMobile{ 
+        display: none;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+    }
+    .menu-button{
+        display: block;
+    }
+    .sidebar{
+        height: 100vh;
+    }
+    .fa-hotel{
+        color: orange;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .close{
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        color: #fff;
+        background-color: rgb(226, 151, 12);
+    border-radius: 7px;
+        filter: brightness(30%);
 
+        /* float: right; */
+    }
+}
+
+@media (max-width:400px) {
+    .sidebar{
+        width: 100%;
+        transition: all .5s;
+    }
+    .fa-hotel{
+        color: orange;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    body{
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .close{
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        color: #fff;
+        background-color: rgb(226, 151, 12);
+    border-radius: 7px;
+
+        /* float: right; */
+    }
+    
+}
 
