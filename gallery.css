@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+/* Header Section */
+body{
+    background: linear-gradient(to right, black,purple,orange);
+    font-family: "Poppins";
+}
+nav{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff3b;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(204,204,204,.4);
+    box-shadow: 0 0 10px rgb(204,204,204);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    color: #fff;
+}
+nav ul {
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    font-family: "Farro";
+
+    color: #fff;
+    margin-inline:1.5rem ;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+li a:hover{
+    color: orange;
+    text-decoration: overline;
+    
+}
+.logo{
+    font-size: 1.5rem;
+}
+.logo i{
+    color: orange;
+}
+#bar{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 550px;
+    z-index: 999;
+    background:linear-gradient(to top,orange,purple) ;
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.3) ;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar #menus{
+    border-bottom: 3px solid rgba(204,204,204,.4);
+    padding-bottom: 20px;
+    width: 100%;
+}
+.sidebar #hotel{
+    color: orange;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.sidebar h1{
+    margin-top: 16px;
+}
+.close{
+    position: absolute;
+    top: 22px;
+    left: 5px;
+
+    /* color: red; */
+    background-color: rgb(226, 151, 12);
+    border-radius: 7px;
+    /* float: right; */
+}
+.side{
+    margin-top: 20px;
+}
+/* Gallery */
+.gallery h1{
+    margin-top: 10rem;
+    text-align: center;
+    color: #fff;
+    font-size: 58px;
+}
+.text p{
+    color: #efefefb6;
+    text-align: center;
+    font-family: "Farro";
+
+}
+.image-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.image-gallery img{
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.image-gallery img:hover{
+    transform: translateY(-10px);
+}
+/* card */
+.card{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .7s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    line-height: 45px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    /* background-color: rgb(3,35,54).5; */
+    /* backdrop-filter: blur(10px); */
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link{
+    border-top:2px solid #fffcfc ;
+    height: 50px;
+    margin-bottom: 2px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1.3rem;
+    background: orange;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.card .back h3{
+    font-family: "Farro";
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 1.4px;
+}
+.card .back p{
+    letter-spacing: 1.2px;
+    font-family: "Calligraffitti", cursive;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/* card end */
+
+    /* footer  */
+.footer{
+    width: 100%;
+    height: 30vh;
+    margin-top: 5rem;
+    background-color: #ffffff3b;
+    backdrop-filter: blur(20px);
+}
+.footer h1{
+    text-align: center;
+    color: #fff;
+}
+.footer i{
+    color: orange;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer-icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    gap: 30px;
+}
+.footer-links  a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition:.5s ease ;
+}
+
+.footer-links a:hover{
+    color: orange;
+    text-decoration: overline;
+}
+
+.footer-icons i {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background-color: #000;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: .3s ease;
+
+}
+.footer-icons i:hover{
+    background-color: #fff;
+    color: #000;
+    transform:translateY(-5px);
+}
+.footer p{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+}
+.footer span{
+    font-weight: 300;
+    font-size: 20px;
+}
+@media (max-width:800px){
+    .hideOnMobile{ 
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .sidebar{
+        width: 100%;
+        transition: all .5s;
+    }
+
+    body{
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width:400px) {
+    .sidebar{
+        width: 100%;
+        transition: all .5s;
+    }
+    body{
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    
+}
