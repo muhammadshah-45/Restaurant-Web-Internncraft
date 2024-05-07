@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+/* Header Section */
+body{
+    background: linear-gradient(to right, black,purple,orange);
+    font-family: "Poppins";
+}
+nav{
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff3b;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(204,204,204,.4);
+    box-shadow: 0 0 10px rgb(204,204,204);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    color: #fff;
+}
+nav ul {
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: #fff;
+    margin-inline:1.5rem ;
+    font-family: "Farro";
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+li a:hover{
+    color: orange;
+    text-decoration: overline;
+    
+}
+.logo{
+    font-size: 1.5rem;
+}
+.logo i{
+    color: orange;
+}
+#bar{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 550px;
+    z-index: 999;
+    background:linear-gradient(to top,orange,purple) ;
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.3) ;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar #menus{
+    border-bottom: 3px solid rgba(204,204,204,.4);
+    padding-bottom: 20px;
+    width: 100%;
+}
+.sidebar #hotel{
+    color: orange;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.sidebar h1{
+    margin-top:-8px;
+    font-size: 2rem;
+}
+.close{
+    position: absolute;
+    top: 22px;
+    left: 5px;
+
+    /* color: red; */
+    background-color: rgb(226, 151, 12);
+    border-radius: 7px;
+    /* float: right; */
+}
+.side{
+    margin-top: 20px;
+}
+/* About */
+/* start */
+
+.content-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+
+}
+.subtitle{
+    flex: 1;
+    width: 600px;
+    margin: 0 25px;
+}
+.subtitle h1{
+    font-size: 18px;
+   font-weight: 600;
+  color: #efefef;
+  line-height: 1.5;
+    transition: all .3s;
+}
+.subtitle p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #efefefb6;
+    margin-bottom: 40px;
+    
+}
+.subtitle button{
+    display: inline-block;
+    padding: 14px 20px;
+    color: #efefef;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    border: none;
+    transition: 0.3s ease;
+    background: linear-gradient(0deg,orange,orangered);
+}
+.subtitle button:hover{
+    background-color: red;
+    transform: scale(1.1);
+}
+.hero-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    border-radius: 20px;
+    filter: grayscale(50%);
+    transition: 0.7s ease;
+}
+.hero-image:hover img{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius:20px ;
+    transition: .5s ease;
+   
+}
+
+/* end */
+.about-us{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    margin-top:10rem ;
+}
+.about-us h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    position: relative;
+    transition: all .3s;
+}
+.about-us h1:hover{
+    text-shadow: 3px 20px 2px  rgba(204,204,204,.4);
+}
+.about-us p{
+    font-size: 18px;
+    font-family: "Farro";
+    color: #efefefb6;
+    margin-bottom: 35px;
+}
+.container1{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    border-radius: 20px; 
+}
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.7s ease;
+    filter: grayscale(50%);
+}
+
+.about-image:hover img{
+    transform: scale(1.2);
+    filter: grayscale(0);
+}
+.about-content{
+    flex: 1;
+}
+.about-content h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: #efefef;
+    line-height: 1.5;
+}
+.about-content p{
+    font-family: "Ubuntu";
+    color: #efefefb6;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+.about-content .read-more{
+    display: inline-block;
+    padding: 10px 20px;
+    color: #efefef;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+    background: linear-gradient(0deg,orange,orangered);
+
+}
+.about-content .read-more:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width:768px) {
+    .about-us{
+        padding: 0 20px;
+    }
+    .about-us h1{
+        font-size: 36px;
+    }
+    .about-us p{
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+}
+    /* footer  */
+.footer{
+    width: 100%;
+    height: 30vh;
+    margin-top: 5rem;
+    background-color: #ffffff3b;
+    backdrop-filter: blur(20px);
+}
+.footer h1{
+    text-align: center;
+    color: #fff;
+}
+.footer i{
+    color: orange;
+}
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer-icons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    gap: 30px;
+}
+.footer-links  a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition:.5s ease ;
+}
+
+.footer-links a:hover{
+    color: orange;
+    text-decoration: overline;
+}
+
+.footer-icons i {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background-color: #000;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: .3s ease;
+
+}
+.footer-icons i:hover{
+    background-color: #fff;
+    color: #000;
+    transform:translateY(-5px);
+}
+.footer p{
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+}
+.footer span{
+    font-weight: 300;
+    font-size: 20px;
+}
+@media (max-width:800px){
+    .hideOnMobile{ 
+        display: none;
+    }
+    body{
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+    .menu-button{
+        display: block;
+    }
+    .fa-hotel{
+        color: orange;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .close{
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        color: #fff;
+        background-color: rgb(226, 151, 12);
+    border-radius: 7px;
+        filter: brightness(30%);
+
+        /* float: right; */
+    }
+}
+
+@media (max-width:400px) {
+    .sidebar{
+        width: 100%;
+        transition: all .5s;
+    }
+    .fa-hotel{
+        color: orange;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    body{
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+    .close{
+        position: absolute;
+        top: 8px;
+        left: 5px;
+        color: #fff;
+        background-color: rgb(226, 151, 12);
+    border-radius: 7px;
+
+        /* float: right; */
+    }
+    
+}
